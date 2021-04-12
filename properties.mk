@@ -450,10 +450,6 @@ PRODUCT_SYSTEM_PROPERTIES += \
     persist.vendor.ssr.enable_ramdumps=1
     persist.vendor.ssr.restart_level=ALL_ENABLE
 
-# Telephony
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.telephony.iwlan_operation_mode=legacy
-
 # Time-services
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.timed.enable=true
