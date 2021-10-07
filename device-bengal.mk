@@ -385,7 +385,8 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.multihal
 
 PRODUCT_PACKAGES += \
-    libsensorndkbridge
+    libsensorndkbridge \
+    android.frameworks.sensorservice@1.0.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.xml \
