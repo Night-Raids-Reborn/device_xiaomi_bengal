@@ -377,8 +377,10 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor \
     android.hardware.power-service.xiaomi-libperfmgr
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+# Preopt SystemUI.
+PRODUCT_DEXPREOPT_SPEED_APPS += SystemUIGoogle  # For internal
+PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI  # For AOSP
+PRODUCT_DEXPREOPT_SPEED_APPS += Settings
 
 PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
