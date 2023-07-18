@@ -70,3 +70,10 @@ prebuilt_etc {
     sub_dir: "init/hw",
     vendor: true,
 }
+
+prebuilt_etc {
+    name: "fstab.postinstall_avb",
+    filename: "fstab.postinstall",
+    src: "etc/fstab.postinstall",
+    product_specific: true,
+}
