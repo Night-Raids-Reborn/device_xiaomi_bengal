@@ -94,7 +94,7 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     libdng_sdk.vendor \
     libgui_vendor \
-    libstdc++.vendor
+    libstdc++_vendor
 
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.vendor \
