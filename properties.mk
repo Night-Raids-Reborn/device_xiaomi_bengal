@@ -487,3 +487,9 @@ PRODUCT_SYSTEM_PROPERTIES += \
    ro.spark.group.url=https://t.me/cemnel \
    ro.spark.maintainer=Free_Palestine \
    ro.spark.maintainer.username=Free_Palestine
+
+# Adb
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.service.adb.enable=1 \
+    persist.service.debuggable=1 \
+    persist.sys.usb.config=mtp,adb
