@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2023 The Minerva's Dome.
+# Copyright (C) 2023 The bengal's Dome.
 #
 # SPDX-License-Identifier: Apache-2.0
 #

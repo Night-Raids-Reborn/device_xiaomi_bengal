@@ -1,5 +1,0 @@
-runtime_resource_overlay {
-    name: "FrameworksResCommon",
-    sdk_version: "current",
-    vendor: true
-}
