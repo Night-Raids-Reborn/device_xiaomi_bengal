@@ -484,3 +484,10 @@ PRODUCT_VENDOR_PROPERTIES += \
 # Zygote
 PRODUCT_PROPERTY_OVERRIDES += \
    zygote.critical_window.minute=10
+
+# Spark-OS
+PRODUCT_SYSTEM_PROPERTIES += \
+   ro.spark.device.name=citrus \
+   ro.spark.group.url=https://t.me/cemnel \
+   ro.spark.maintainer=Free_Palestine \
+   ro.spark.maintainer.username=Free_Palestine
