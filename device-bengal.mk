@@ -365,6 +365,10 @@ PRODUCT_PACKAGES += \
     fstab.qcom_ramdisk \
     fstab.qcom
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # RIL
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
