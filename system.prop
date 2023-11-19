@@ -1,0 +1,60 @@
+# Camera
+persist.vendor.camera.privapp.list=com.android.camera,org.codeaurora.snapcam
+
+# Charger
+ro.charger.disable_init_blank=true
+
+# CNE
+persist.vendor.cne.feature=1
+
+# Display
+debug.sf.enable_hwc_vds=1
+debug.sf.latch_unsignaled=1
+
+# DPM
+persist.vendor.dpm.feature=1
+
+# Fingerprint
+ro.hardware.fp.sideCap=true
+
+# FWK Detect
+ro.vendor.qti.va_aosp.support=1
+
+# IMS
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=0
+persist.dbg.wfc_avail_ovr=1
+
+# Media
+debug.stagefright.ccodec=1
+media.aac_51_output_enabled=true
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+media.stagefright.enable-aac=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-http=true
+media.stagefright.enable-player=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-scan=true
+media.stagefright.thumbnail.prefer_hw_codecs=true
+mmp.enable.3g2=true
+ro.media.recorder-max-base-layer-fps=60
+
+# Netflix
+ro.netflix.bsp_rev=Q6115-31409-1
+
+# NFC
+ro.nfc.port=I2C
+
+# Radio
+persist.sys.fflag.override.settings_provider_model=false
+rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
+ril.subscription.types=NV,RUIM
+ro.telephony.default_network=22,20
+
+# Rescue Party
+persist.device_config.configuration.disable_rescue_party=true
+persist.sys.disable_rescue=true
+
+# SSR
+persist.vendor.ssr.enable_ramdumps=1
+persist.vendor.ssr.restart_level=ALL_ENABLE

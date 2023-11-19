@@ -1,6 +1,0 @@
-runtime_resource_overlay {
-    name: "WifiResbengal",
-    theme: "WifiResbengal",
-    sdk_version: "current",
-    product_specific: true
-}
