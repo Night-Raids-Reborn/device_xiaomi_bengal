@@ -6,11 +6,8 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
     AmbientSensePrebuilt \
-    Aperture\
     arcore \
     Camera2 \
-    Chrome \
-    Chrome-Stub \
     ConnMO \
     ConnMetrics \
     DCMO \
@@ -19,7 +16,6 @@ LOCAL_OVERRIDES_PACKAGES := \
     Drive \
     GCS \
     GoogleCamera \
-    Maps \
     Music \
     MyVerizonServices \
     OBDM_Permissions \
