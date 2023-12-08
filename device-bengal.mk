@@ -495,7 +495,11 @@ PRODUCT_PACKAGES += \
     vndservicemanager
 
 # Vibrator
-$(call inherit-product, hardware/xiaomi/aidl/vibrator/vibrator-vendor-product.mk)
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.vibrator.service
+    
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/vibrator/etc/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
 
 # VNDK
 PRODUCT_COPY_FILES += \
