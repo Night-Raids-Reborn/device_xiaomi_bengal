@@ -58,3 +58,6 @@ persist.sys.disable_rescue=true
 # SSR
 persist.vendor.ssr.enable_ramdumps=1
 persist.vendor.ssr.restart_level=ALL_ENABLE
+
+#Maintainer
+ro.voltage.maintainer=Darknius_#FreePalestine
