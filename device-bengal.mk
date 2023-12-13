@@ -413,20 +413,19 @@ PRODUCT_PACKAGES += \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.sh \
-    init.qcom.usb.sh \
-    init.qti.dcvs.sh
+    init.qti.dcvs.sh \
+    init.qti.early_init.sh
 
 PRODUCT_PACKAGES += \
     init.qcom.factory.rc \
     init.qcom.rc \
-    init.qcom.usb.rc \
-    init.qti.ufs.rc \
     init.recovery.qcom.rc \
-    init.stnfc.rc \
     init.target.rc \
-    fstab.qcom \
-    ueventd.qcom.rc \
-    fstab.postinstall_avb
+    ueventd.xiaomi.rc
+
+PRODUCT_PACKAGES += \
+    fstab.postinstall_avb \
+    fstab.qcom
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom

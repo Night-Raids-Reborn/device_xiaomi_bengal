@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2021 The LineageOS Project
+// Copyright (C) 2023 The Minerva's Dome.
 //
 // SPDX-License-Identifier: Apache-2.0
 //
@@ -24,6 +24,12 @@ sh_binary {
 }
 
 sh_binary {
+    name: "init.qcom.usb.sh",
+    src: "bin/init.qcom.usb.sh",
+    vendor: true,
+}
+
+sh_binary {
     name: "init.qcom.sh",
     src: "bin/init.qcom.sh",
     vendor: true,
@@ -32,6 +38,12 @@ sh_binary {
 sh_binary {
     name: "init.qti.dcvs.sh",
     src: "bin/init.qti.dcvs.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qti.early_init.sh",
+    src: "bin/init.qti.early_init.sh",
     vendor: true,
 }
 
@@ -44,6 +56,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.qcom.usb.rc",
+    src: "etc/init.qcom.usb.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+}
+
+prebuilt_etc {
     name: "init.qcom.rc",
     src: "etc/init.qcom.rc",
     sub_dir: "init/hw",
@@ -51,23 +70,30 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.qti.ufs.rc",
-    src: "etc/init.qti.ufs.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init.stnfc.rc",
-    src: "etc/init.stnfc.rc",
-    sub_dir: "init/hw",
-    vendor: true,
+    name: "init.recovery.qcom.rc",
+    src: "etc/init.recovery.qcom.rc",
+    sub_dir: "init",
+    recovery: true,
 }
 
 prebuilt_etc {
     name: "init.target.rc",
     src: "etc/init.target.rc",
     sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "ueventd.xiaomi.rc",
+    filename: "ueventd.rc",
+    src: "etc/ueventd.xiaomi.rc",
+    vendor: true,
+}
+
+// Filesystem table
+prebuilt_etc {
+    name: "fstab.qcom",
+    src: "etc/fstab.qcom",
     vendor: true,
 }
 
