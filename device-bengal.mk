@@ -305,13 +305,12 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    CarrierConfigOverlay \
-    FrameworksCustombengal \
-    FrameworksResbengal \
-    SettingsResbengal \
-    SystemUIResbengal \
-    TelephonyResbengal \
-    WifiResCommon
+    CarrierConfigCommon \
+    FrameworksResCommon \
+    SettingsProviderCommon \
+    SettingsResCommon \
+    SystemUIResCommon \
+    TelephonyResCommon
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
